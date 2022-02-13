@@ -1,0 +1,55 @@
+.steps_section{
+    background-color: #424242;
+    color: white;
+    padding: 30px 2% 30px 4%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 65%;
+    border-radius: 15px;
+}
+
+.roadMap_steps_heading{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 32px;
+    letter-spacing: 0.025em;
+}
+
+.roadMap_steps_content{
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    line-height: 29px;
+}
+.roadMap_steps_heading_blue{
+    color: #fff !important;
+}
+
+@media screen and (max-width: 1400px){
+    .roadMap_steps_heading{
+        font-size: 25px;
+        
+    }
+    .roadMap_steps_content{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 600px){
+
+    .steps_section{
+    padding: 15px 4% 10px 9%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 110%;
+    border-radius: 15px;
+    }
+    .roadMap_steps_heading{
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .roadMap_steps_content{
+        font-size: 14px;
+        line-height: 23px;
+    }
+}

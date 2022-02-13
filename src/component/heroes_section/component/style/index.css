@@ -1,0 +1,101 @@
+.image_card{
+    margin: 20px 20px ;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.person_name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+}
+.person_position{
+    margin-top: 5px;
+
+    width: 100%;
+    margin-bottom: 8px;
+    
+}
+.person_position h3{
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    opacity: 0.9;
+    font-weight: 500;
+}
+.person_image{
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+    background-color: black;
+    /* border-radius: 115px; */
+}
+.person_img{
+    border-radius: 115px;
+    width: 100%;
+    height: 100%;
+}
+.icons_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+ .icons_section span:nth-child(odd){
+    margin: auto 5%
+}
+
+.image_card:hover img{
+    filter: brightness(70%);
+}
+.image_card:hover .person_name{
+    font-weight: bold;
+}
+.image_card:hover h3{
+    opacity: 1;    
+}
+
+.image_card:hover .twitter_icon ,.image_card:hover .instagram_icon, .image_card:hover .linkedin_icon{
+    opacity: 1;    
+    color: #00ffbd !important;
+
+}
+.image_card:hover {
+    opacity: 1;    
+}
+
+@media screen and (max-width: 1400px){
+
+    .person_name{
+        font-size: 18px;
+        font-weight: 600;
+    
+    }
+    .person_position{
+        margin-bottom: 8px;
+    
+    }
+    .person_position h3{
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .person_name{
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .person_position{
+        margin-bottom: 8px;
+    }
+    .person_position h3{
+        font-size: 14px;
+    }
+
+}
