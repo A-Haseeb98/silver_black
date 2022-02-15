@@ -10,6 +10,8 @@ import M_LOGO from '../../assets/images/newLogoMobile.png'
 import BANNER from '../../assets/images/silver_cover.png'
 import { GrInstagram } from 'react-icons/gr';
 import { useState } from 'react';
+import { Fade } from "react-awesome-reveal";
+
 
 function Cover() {
 
@@ -44,12 +46,16 @@ function Cover() {
                     </div>
                 </div>
             </div>
+
             <div className='image_banner_container'>
                 <img className='banner_image' src={BANNER} alt='logo' />
                 <div className='center_div'>
-                    <h1>SILVERBACK LEGENDS <br />
-                        <span>The Godfathers of all apes</span> </h1>
+                    <Fade direction='down'>
+                        <h1>SILVERBACK LEGENDS <br />
+                            <span>The Godfathers of all apes</span> </h1>
+                    </Fade>
                     <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>
+
                 </div>
             </div>
 
@@ -86,10 +92,10 @@ function Cover() {
                     <img className='mobile_banner_image' src={BANNER} alt='logo' />
                     {/* <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN US TO REGISTER FOR PRESALE</button> */}
                     <div className='center_div'>
-                    <h1>SILVERBACK LEGENDS <br />
-                        <span>The Godfathers of all apes</span> </h1>
-                    <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>
-                </div>
+                        <h1>SILVERBACK LEGENDS <br />
+                            <span>The Godfathers of all apes</span> </h1>
+                        <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>
+                    </div>
                 </div>
             </div>
         </>
