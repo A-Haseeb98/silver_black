@@ -1,5 +1,4 @@
 import './style/index.css'
-// import ICON from '../../../assets/images/six_dots.png'
 import { Fade } from "react-awesome-reveal";
 
 function Card() {

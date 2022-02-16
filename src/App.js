@@ -1,12 +1,13 @@
 import './App.css';
-import { Cover, Footer, FrequentlyAskQuestion, Heroes, MillionDollar, RoadMap, UniqueAvatar } from './component';
+import { Cover, Footer, FrequentlyAskQuestion, Heroes, MillionDollar, MintCover, RoadMap, UniqueAvatar } from './component';
 
 function App() {
   return (
     <div className="container-fluid">
       <Cover/>
+      {/* <MintCover /> */}
       <UniqueAvatar />
-      {/* <MillionDollar /> */}
+      <MillionDollar />
       <RoadMap />
       <Heroes />
       <FrequentlyAskQuestion />

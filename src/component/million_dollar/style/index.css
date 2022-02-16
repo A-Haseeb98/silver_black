@@ -8,25 +8,27 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 0px;
 }
 .logo_container{
     background-color: black;
     padding-top: 50px;  
 }
 .logo_section{
-    flex-basis: 55%;
+    flex-basis: 45%;
 }
 
 .content_section{
-    flex-basis: 35%;
+    flex-basis: 50%;
+    /* padding-left: 50px; */
 }
 .logo_img{
     width: 100%;
 }
 
 .content_section .heading{
+    color: white;
     display: inline-block;
-    color: #00ffbd;
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
@@ -44,7 +46,7 @@
 } 
 
 .content_section .content{
-    color: white;
+    color: white ;
     font-size: 18px;
     letter-spacing: 0.025em;
     line-height: 29px;
@@ -74,7 +76,6 @@
         flex-direction: column-reverse;
     }
     .content_section .heading{
-        color: #00ffbd;
         line-height: 36px;
         font-size: 24px;
     }

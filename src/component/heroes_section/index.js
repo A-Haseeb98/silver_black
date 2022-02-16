@@ -5,7 +5,7 @@ import David from '../../assets/images/David.jpeg'
 import Anton from '../../assets/images/Anton.jpg'
 import Angelina from '../../assets/images/Angelina.jpg'
 import Card from "./component/card"
-import { Fade, Zoom } from 'react-awesome-reveal'
+import { Zoom } from 'react-awesome-reveal'
 
 
 function Heroes() {
@@ -31,7 +31,7 @@ function Heroes() {
                             position="Our female co-founder brings to the table over 15 years of experience in creating art and contributing to multiple high-design / fashion projects globally and yet keeping her privacy behind closed doors accessible for the high society only. If she is not in her studio creating the next unique item that brings joy to the customers, she is with us. She connects her network with the team, leading and guiding the 3d artists to bring her very own fashion vision to life. " />
 
 
-                        <Card name="Anton" img_url={Anton} twitter='#' instagram='#' linkedin='#'
+                        <Card name="JP" img_url={Anton} twitter='#' instagram='#' linkedin='#'
                             position="He may be dressed fashionable and gives the impression he has something to do with fashion, but his professional life far away from that. But when it comes to digital security, he and his team are the ones you want to be on your side. On top of being an early crypto investor, he is not only an expert Blockchain & Web3 Developer, he is also a master of Smarts Contracts and cryptography. Our security front man to keep this project protected and safe." />
 
 

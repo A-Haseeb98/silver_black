@@ -25,12 +25,24 @@
 .image_container{
     flex-basis: 50%;
     display: flex;
-    padding-top: 20px;
+    animation-duration: 2000ms;
+    animation-timing-function: ease;
+    animation-delay: 0ms;
+    animation-name: animation-9e64fq;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+.sub_image_container{
+    width: 50%;
+}
+.sub_image_container div {
+    padding: 7px;
 }
 
 .avatar_img{
-    width: 95%;
-    margin: 3%;
+    width: 100%;
+    /* margin: 3%; */
 }
 
 .unique_section_text .content{
@@ -57,7 +69,7 @@
 
 @media screen and (max-width: 600px){
     .sub_container{
-        padding-top: 0px; 
+        padding-top: 20px; 
     }
     .unique_section_text{
         padding-top: 0px;
@@ -72,7 +84,7 @@
         padding-top: 18px;
         font-size: 24px;
         line-height: 36px;
-        margin-bottom: 4px;
+        margin-bottom: -10px;
     }
 
     .unique_section_text .content{
@@ -85,5 +97,17 @@
     .logo_section{
         margin-top: 20px;
     }
+    .image_container{
+        flex-basis: 50%;
+        display: flex;
+
+    }
+    .sub_image_container{
+        width: 50%;
+    }
+    .sub_image_container div {
+        padding: 0px;
+    }
+  
 
 }

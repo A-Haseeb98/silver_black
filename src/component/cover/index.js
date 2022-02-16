@@ -1,12 +1,10 @@
 import { AiOutlineClose } from 'react-icons/ai';
+import { FaAlignJustify } from 'react-icons/fa';
+
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import DISCORD from '../../assets/images/discord.png'
-import OPENSEA from '../../assets/images/openSea.png'
 import TWITTER from '../../assets/images/twitter.png'
-import INSTAGRAM from '../../assets/images/instagram _icon.jpeg'
 import './style/index.css'
-import LOGO from '../../assets/images/newLogoMobile.png'
-import M_LOGO from '../../assets/images/newLogoMobile.png'
 import BANNER from '../../assets/images/silver_cover.png'
 import { GrInstagram } from 'react-icons/gr';
 import { useState } from 'react';
@@ -21,7 +19,7 @@ function Cover() {
     }
     return (
         <>
-            <div className='top_header'>
+            <div className='top_header display_none'>
                 <div className='nav_left_wrapper'>
                     <div className='nav_logo_container' >
                         SILVERBACK LEGENDS
@@ -50,11 +48,12 @@ function Cover() {
             <div className='image_banner_container'>
                 <img className='banner_image' src={BANNER} alt='logo' />
                 <div className='center_div'>
-                    <Fade direction='down'>
-                        <h1>SILVERBACK LEGENDS <br />
-                            <span>The Godfathers of all apes</span> </h1>
+                    <Fade direction='up' cascade={true}>
+
+                        <h1>Welcome To The Exclusive SILVERBACK LEGENDS!<br /></h1>
+                        <p>Join this super-exclusive NFT project featuring not only the coolest art, but unmatched utility!</p>
+                        <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>
                     </Fade>
-                    <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>
 
                 </div>
             </div>
@@ -65,7 +64,7 @@ function Cover() {
                 </div>
 
                 <div className='right_section_mobile'>
-                    <button onClick={() => handleClick(toggle)} className='navbar_btn_mobile'>{toggle ? <AiOutlineClose size='24' /> : <HiOutlineMenuAlt4 size='28' />}</button>
+                    <button onClick={() => handleClick(toggle)} className='navbar_btn_mobile'>{toggle ? <AiOutlineClose size='24' /> : <FaAlignJustify size='28' />}</button>
                 </div>
             </div>
             <div className='mobile_navbar_container'>
@@ -74,7 +73,6 @@ function Cover() {
                         <div className='mobile_sections_container'>
                             <ul className='mobile_sections_menu' >
                                 <li><a href='#about'>About</a> </li>
-                                {/* <li><a href='#charity'>Charity</a> </li> */}
                                 <li><a href='#road_map'>Roadmap</a> </li>
                                 <li><a href='#team_container'>Team</a> </li>
                                 <li><a href='#faq'>FAQ</a> </li>
@@ -92,8 +90,12 @@ function Cover() {
                     <img className='mobile_banner_image' src={BANNER} alt='logo' />
                     {/* <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN US TO REGISTER FOR PRESALE</button> */}
                     <div className='center_div'>
-                        <h1>SILVERBACK LEGENDS <br />
-                            <span>The Godfathers of all apes</span> </h1>
+                        <Fade direction='right' triggerOnce={true} cascade={true}>
+
+                            <h1>Welcome To The Exclusive SILVERBACK LEGENDS!  </h1>
+                            <p>Join this super-exclusive NFT project featuring not only the coolest art, but unmatched utility!</p>
+                        </Fade>
+
                         <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>
                     </div>
                 </div>

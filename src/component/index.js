@@ -5,6 +5,7 @@ import RoadMap from "./road_map";
 import MillionDollar from "./million_dollar";
 import UniqueAvatar from "./unique_avatar";
 import Cover from "./cover";
+import MintCover from "./MIntCover";
 
 export {
     Footer,
@@ -14,4 +15,5 @@ export {
     MillionDollar,
     UniqueAvatar,
     Cover,
+    MintCover
 }

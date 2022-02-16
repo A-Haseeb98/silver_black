@@ -1,6 +1,5 @@
 import './style/index.css'
 import Card from "./component/steps/card"
-import DESIGN from "../../assets/images/dotted-line.png"
 import GuestSection from './component/guest_section'
 function RoadMap() {
     return (

@@ -1,4 +1,3 @@
-import LOGO from '../../assets/images/newLogo.png'
 import './style/index.css'
 function Footer() {
     return (
