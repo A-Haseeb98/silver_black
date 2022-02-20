@@ -1,5 +1,5 @@
 import { AiOutlineClose } from 'react-icons/ai';
-import { FaAlignJustify ,FaDiscord } from 'react-icons/fa';
+import { FaAlignJustify, FaDiscord } from 'react-icons/fa';
 
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import DISCORD from '../../assets/images/discord.png'
@@ -50,8 +50,9 @@ function Cover() {
                 <div className='center_div'>
                     <Fade direction='up' cascade={true}>
 
-                        <h1>Welcome To The Exclusive SILVERBACK LEGENDS!<br /></h1>
-                        <p>Join this super-exclusive NFT project featuring not only the coolest art, but unmatched utility!</p>
+                        <h1> SILVERBACK LEGENDS
+                        </h1>
+                        <p> The Godfathers of all Apes</p>
                         {/* <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button> */}
                     </Fade>
 

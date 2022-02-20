@@ -3,6 +3,7 @@ import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 
 function Card({ name, position, img_url, twitter, instagram, linkedin }) {
@@ -11,7 +12,7 @@ function Card({ name, position, img_url, twitter, instagram, linkedin }) {
     const [In, setInstagram] = useState(false)
     const [li, setLinkedin] = useState(false)
 
-    
+
     useEffect(() => {
         if (twitter !== '#') {
             setTwitter(true)
@@ -22,27 +23,28 @@ function Card({ name, position, img_url, twitter, instagram, linkedin }) {
             setLinkedin(true)
         }
     }, []
-)
+    )
 
 
 
 
 
     return (
-        <div className='image_card'>
+        <Fade triggerOnce={true} direction={'up'}>
+            <div className='image_card'>
 
-            <div className='person_image'>
-                <img className='person_img' src={img_url} alt='Profile' />
-            </div>
+                <div className='person_image'>
+                    <img className='person_img' src={img_url} alt='Profile' />
+                </div>
 
-            <div>
-                <h3 className='person_name'>{name}</h3>
-            </div>
-            <div className='person_position'>
-                <h3>{position}</h3>
-            </div>
-            
-            {/* <div className='icons_section' >
+                <div>
+                    <h3 className='person_name'>{name}</h3>
+                </div>
+                <div className='person_position'>
+                    <h3>{position}</h3>
+                </div>
+
+                {/* <div className='icons_section' >
 
                 {tw ? <span className='twitter'><a href={twitter} rel='noreferrer' target='_blank' ><BsTwitter className='twitter_icon' color={'rgba(255,255,255,0.4)'} /></a></span> : null
 
@@ -56,7 +58,8 @@ function Card({ name, position, img_url, twitter, instagram, linkedin }) {
 
 
             </div> */}
-        </div>
+            </div>
+        </Fade>
     )
 }
 
