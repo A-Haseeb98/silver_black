@@ -6,7 +6,7 @@ import MillionDollar from "./million_dollar";
 import UniqueAvatar from "./unique_avatar";
 import Cover from "./cover";
 import MintCover from "./MIntCover";
-
+import NewSection from './second_section_new'
 export {
     Footer,
     FrequentlyAskQuestion,
@@ -15,5 +15,6 @@ export {
     MillionDollar,
     UniqueAvatar,
     Cover,
-    MintCover
+    MintCover,
+    NewSection
 }

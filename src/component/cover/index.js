@@ -1,11 +1,11 @@
 import { AiOutlineClose } from 'react-icons/ai';
-import { FaAlignJustify } from 'react-icons/fa';
+import { FaAlignJustify ,FaDiscord } from 'react-icons/fa';
 
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import DISCORD from '../../assets/images/discord.png'
 import TWITTER from '../../assets/images/twitter.png'
 import './style/index.css'
-import BANNER from '../../assets/images/silver_cover.png'
+import BANNER from '../../assets/images/silver_cover2.png'
 import { GrInstagram } from 'react-icons/gr';
 import { useState } from 'react';
 import { Fade } from "react-awesome-reveal";
@@ -35,7 +35,7 @@ function Cover() {
                 </div>
                 <div className='nav_right_wrapper'>
                     <div className='top_icons'>
-                        <span className='icon_' ><a href='https://discord.com/invite/VwKsk7ktsp' rel="noreferrer" target='_blank'> <img className='img_icon discord_icon_mobile' src={DISCORD} alt='DISCORD' /></a></span>
+                        <span className='icon_ menu_instagram' ><a href='https://discord.com/invite/VwKsk7ktsp' rel="noreferrer" target='_blank'><FaDiscord size='20' color='black' /></a></span>
                         <span className='icon_'><a href='https://twitter.com/SILVERBACKLGNDS' rel="noreferrer" target='_blank'><img className='img_icon twitter_icon_mobile' src={TWITTER} alt='TWITTER' /></a></span>
                         <span className='icon_ menu_instagram'><a href='https://www.instagram.com/silverbacklegends/' target='_blank' rel="noreferrer"><GrInstagram size='17' color='black' /></a></span>
                     </div>
@@ -52,7 +52,7 @@ function Cover() {
 
                         <h1>Welcome To The Exclusive SILVERBACK LEGENDS!<br /></h1>
                         <p>Join this super-exclusive NFT project featuring not only the coolest art, but unmatched utility!</p>
-                        <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>
+                        {/* <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button> */}
                     </Fade>
 
                 </div>

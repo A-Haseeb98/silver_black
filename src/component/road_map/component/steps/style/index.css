@@ -1,55 +1,246 @@
-.steps_section{
-    background-color: #222222 ;
+
+.steps_container{
     color: white;
-    padding: 30px 2% 30px 4%;
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 65%;
+    width: 100%;
+    max-width: 850px !important;
     border-radius: 15px;
+    display: flex;
+    z-index: 10;
 }
 
-.roadMap_steps_heading{
-    font-size: 26px;
+.step_Container{
+    display: flex;
+    width: 100%;
+    background-color: #222222 ;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 10px;
+    z-index: -2111;
+}
+.step_Container .content_container{
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.step_Container .content_container h2{
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 15px;
-    line-height: 32px;
+    margin-bottom: 30px;
+    line-height: 30px;
     letter-spacing: 0.025em;
 }
 
-.roadMap_steps_content{
-    font-size: 18px;
+.step_Container .content_container p{
+    font-size: 20px;
     letter-spacing: 0.025em;
     line-height: 29px;
 }
-.roadMap_steps_heading_blue{
-    color: #fff !important;
+
+.line-up {
+    position: relative;
 }
 
-@media screen and (max-width: 1400px){
-    .roadMap_steps_heading{
-        font-size: 25px;
-        
-    }
-    .roadMap_steps_content{
-        font-size: 17px;
-    }
-}
-@media screen and (max-width: 600px){
+.line-up::after {
+    content: "";
+    width: 1px;
+    height: calc(100% - 110px);
+    position: absolute;
+    top: 48px;
+    left: 35.5px;
+    border-left: 1px dashed #fff;
 
-    .steps_section{
-    padding: 15px 4% 10px 9%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 110%;
-    border-radius: 15px;
+}
+
+.line-up::before {
+    content: "";
+    width: 9px;
+    height: 6px;
+    background: url(../../../../../assets/images/down-arrow.png) center center no-repeat transparent;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 56px;
+    left: 31px;
+    z-index: 22;
+}
+
+.line-up-content-circle {
+    margin-left: 4px;
+    margin-top: 4px;
+    width: 44px ;
+    height: 44px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 2s infinite;
+    z-index: 22;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2);
+
+}
+.line-up-content-circle-inner {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: inset 0px 8px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 22;
+
+}
+
+.line-up-content-circle-inner::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
     }
-    .roadMap_steps_heading{
-        font-size: 14px;
-        line-height: 16px;
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+@media screen and (max-width: 768px){
+
+    .steps_container{
+        color: white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 100%;
+        max-width: 850px !important;
+        border-radius: 10px;
+      
+    }
+    
+    .step_Container{
+        display: flex;
+        width: 100%;
+        background-color: #222222 ;
+        color: #fff;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+    .step_Container .content_container{
+        width: 100%;
+        padding-left: 5px;
+        padding-top: 7px;
+    }
+    .step_Container .content_container h2{
+        font-size: 20px;
+        font-weight: bold;
         margin-bottom: 10px;
+        line-height: 25px;
+        letter-spacing: 0.025em;
     }
-    .roadMap_steps_content{
-        font-size: 14px;
-        line-height: 23px;
+    
+    .step_Container .content_container p{
+        font-size: 16px;
+        letter-spacing: 0.025em;
+        line-height: 22px;
     }
+    
+    .line-up {
+        position: relative;
+    }
+    
+    .line-up::after {
+        content: "";
+        width: 1px;
+        height: calc(100% - 110px);
+        position: absolute;
+        top: 48px;
+        left: 26px;
+        border-left: 1px dashed #fff;
+    
+    }
+    
+    .line-up::before {
+        content: "";
+        width: 9px;
+        height: 6px;
+        background: url(../../../../../assets/images/down-arrow.png) center center no-repeat transparent;
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 55px;
+        z-index: 2222;
+        left: 21.5px;
+    }
+    
+    
+    .line-up-content-circle {
+        margin-left: 4px;
+        margin-top: 4px;
+        width: 34px ;
+        height: 34px;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        position: relative;
+        animation: pulse 2s infinite;
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.2);
+    
+    }
+    .line-up-content-circle-inner {
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        border-radius: 50%;
+        box-shadow: inset 0px 8px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+    }
+    
+    .line-up-content-circle-inner::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #000000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -5px;
+        margin-left: -5px;
+    }    
+    
 }

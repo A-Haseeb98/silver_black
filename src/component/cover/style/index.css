@@ -7,12 +7,12 @@
 .top_header{
     padding: 0 ;
     height: 95px;
-    width: 70%;
+    width: 100%;
     background-color: black;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    z-index: 11;
+    z-index: 11222222222;
 
 }
 .nav_left_wrapper{
@@ -123,22 +123,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 .top_right_btn .navbar_btn{
-    /* background-image: linear-gradient(to left, #00ffbd, #00f2d2, #00e5df, #00d6e5, #2dc6e2);    font-size: 14px; */
     background-color: white;
     font-weight: 700;
-    border: none;
-    height: 60%;
-    width: 230px;
+    border: 6px solid black !important;
+    width: 250px !important;
+    padding: 5px !important;
     line-height: 20px;
-    letter-spacing: 0.070em;
+    letter-spacing: 0.00 !important;
+    border-radius: 40px !important;
+    height: 100%;
+    font-size: 18px;
+    transform: translateY(-4px);
 }
 
 .top_right_btn :hover{
     /* background-image: linear-gradient(to right, #00ffbd, #00f2d2, #00e5df, #00d6e5, #2dc6e2);    font-size: 14px; */
     font-weight: 700;
-    border: 2px solid black;
+    border: 7px solid black !important;
 }
 
 .mobile_cover{
@@ -165,12 +169,12 @@
 .image_banner_container{
     width: 100%;
     position: relative;
-    /* z-index: -222222222;    */
+    z-index: -222222222;   
 
 }
 .image_banner_container .banner_image{
     width: 100%;
-    margin-top: -50px; 
+    margin-top: 20px !important; 
     /* z-index: -222222222;    */
 }
 /* discord button */
@@ -178,7 +182,7 @@
 .center_div{
     position: absolute;
     left: 50%;
-    top: 18% !important;
+    top: 12% !important;
     z-index: 3;
     transform: translate(-50%, -50%);
     display: flex;

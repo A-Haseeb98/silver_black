@@ -389,9 +389,9 @@
     }
     .mint_main_heading{
         color: white;
-        font-size: 40px;
+        font-size: 32px;
         text-align: center;
-        line-height: 40px;
+        line-height: 32px;
         font-weight: bolder;
         margin-bottom: 10px;
         margin-top: 55px;
@@ -405,6 +405,19 @@
         padding: 15px;
     }
 }
+@media screen and (max-width: 960px){
+    .mint_container{
+        padding: 5px;
+        border-radius: 0;
+    }
+    .mint_container .message_box{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .sellector_buttons_wrapper{
+        padding: 10px;
+    }
+}
 
 @media screen and (max-width: 800px){
 .top_header{
@@ -416,6 +429,7 @@
     text-align: center;
     line-height: 30px;
     font-weight: bolder;
+    
 }
 .center_div span{
     font-size: 20px;
@@ -433,6 +447,7 @@
     margin-top: 0;
 }
 }
+
 
 
 @media screen and (max-width: 768px){

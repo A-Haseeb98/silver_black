@@ -24,13 +24,17 @@ function Heroes() {
                     </p> */}
                 </div>
                 <div className='Team_members_container'>
-                    <Zoom triggerOnce = {true} duration={500}>
+                    <Zoom triggerOnce={true} duration={500}>
                         <Card name="David " img_url={David} twitter='#' instagram='#' linkedin='#'
                             position="The founder, father, passionate golf player, Legend One in charge and responsible for everything around and about the SILVERBACK LEGENDS. From project direction to design to lifting up employees who are stuck in quarantine. David is deeply involved in investment strategies, e-commerce and 3D Design production and development in the Interior Design sector." />
                         <Card name="Angelina" img_url={Angelina} twitter='#' instagram='#' linkedin='#'
                             position="Our female co-founder brings to the table over 15 years of experience in creating art and contributing to multiple high-design / fashion projects globally and yet keeping her privacy behind closed doors accessible for the high society only. If she is not in her studio creating the next unique item that brings joy to the customers, she is with us. She connects her network with the team, leading and guiding the 3d artists to bring her very own fashion vision to life. " />
 
 
+                    </Zoom>
+                </div>
+                <div className='Team_members_container'>
+                    <Zoom triggerOnce={true} duration={500}>
                         <Card name="JP" img_url={Anton} twitter='#' instagram='#' linkedin='#'
                             position="He may be dressed fashionable and gives the impression he has something to do with fashion, but his professional life far away from that. But when it comes to digital security, he and his team are the ones you want to be on your side. On top of being an early crypto investor, he is not only an expert Blockchain & Web3 Developer, he is also a master of Smarts Contracts and cryptography. Our security front man to keep this project protected and safe." />
 
@@ -42,6 +46,32 @@ function Heroes() {
                         <Card name="Noah" img_url={Noah} twitter='#' instagram='#' linkedin='#'
                             position="Noah is a mix of the cool Mr-T from the A-Team, wise like Yoda, but with a sense of humour to brighten anyone's day. When it comes to Silverback Legends he rolls up his sleeves and dives into his tasks. He is setting up, organizing and bringing the behind the scenes together like a perfect fitting puzzle. From getting the right equipment, to managing marketing strategies, to briefing the different departments of the project, he is the heart of our team." />
                     </Zoom>
+                </div>
+
+                <div className='moderator_container'>
+                    <h1>MODERATORS</h1>
+                    <div className='sub_m_container'>
+                        <div className='m_member'>
+                            Cedey
+                        </div>
+
+                        <div className='m_member'>
+                            Wes
+                        </div>
+                        <div className='m_member'>
+                            Magnetic Kiba
+                        </div>
+                        <div className='m_member'>
+                            Jay
+                        </div>
+                        <div className='m_member'>
+                            Barny
+                        </div>
+                        <div className='m_member'>
+                            Rufus
+                        </div>
+                    </div>
+
                 </div>
                 <div className='team_content_bellow'>
                     SILVERBACK LEGENDS has been KYC Verified by IDO.

@@ -1,19 +1,12 @@
 .roadmap_container{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
-.for_right_design{
-    position: relative;
-    }
-    .right_design{
-        position: absolute;
-        top:80px;
-        left: 1.3%;
-        height: 103%;
-        padding-bottom: 0px; 
-    }
-    .right_design img{
-        height: 90%;
-    }
+
 .main-heading-roadmap{
     color: #fff;
     font-size: 36px;
