@@ -1,5 +1,5 @@
 import './App.css';
-import { Cover, Footer,NewSection, FrequentlyAskQuestion, Heroes, MillionDollar, MintCover, RoadMap, UniqueAvatar } from './component';
+import { Cover, Footer,NewSection, FrequentlyAskQuestion, Heroes, MintCover, RoadMap } from './component';
 
 function App() {
   return (
@@ -7,8 +7,6 @@ function App() {
       <Cover/>
       {/* <MintCover /> */}
       <NewSection/>
-      {/* <UniqueAvatar />
-      <MillionDollar /> */}
       <RoadMap />
       <Heroes />
       <FrequentlyAskQuestion />

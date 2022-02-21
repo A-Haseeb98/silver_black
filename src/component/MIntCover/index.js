@@ -3,7 +3,7 @@ import { FaAlignJustify } from 'react-icons/fa';
 import DISCORD from '../../assets/images/discord.png'
 import TWITTER from '../../assets/images/twitter.png'
 import './style/index.css'
-import BANNER from '../../assets/images/silver_cover.png'
+import BANNER from '../../assets/images/silver_cover2.png'
 import { GrInstagram } from 'react-icons/gr';
 import { useState } from 'react';
 import { Fade } from "react-awesome-reveal";
@@ -100,47 +100,47 @@ function Cover() {
                 <img className='banner_image' src={BANNER} alt='logo' />
                 <div className='mint_cover_content'>
                     <Fade direction='left' triggerOnce={true} >
-                        <h1 className='mint_main_heading'>Welcome To The Exclusive <br /> SILVERBACK LEGENDS!</h1>
+                        <h1 className='mint_main_heading'>SILVERBACK LEGENDS! <br /> <span>The Godfathers of all Apes</span></h1>
                     </Fade>
-                        <div className='mint_container'>
+                    <div className='mint_container'>
 
-                            <div className="message_box">
-                                <p className='alert-p'>Minting Is Opened <br /> For Whitelisted Addresses. </p>
-                            </div>
-                            {
-                                close ? <div className='notification_box'>
-                                    <p><span className='type'>Error! </span> Email address is already registered.</p>
-                                    <span onClick={() => setClose(false)} className='cut'><GrFormClose /></span>
-                                </div> : null
-                            }
-
-                            <div className="sellector_buttons_wrapper">
-                                <button className='plus_minus_button' onClick={() => clickHandler(1, '-')}>
-                                    <HiMinus color='black' />
-                                </button>
-                                <div >
-                                    <span className='quantity'> QUANTITY</span>
-                                    <span className='mint_qantity'>{quantity}</span>
-
-                                </div>
-
-                                <button className='plus_minus_button' onClick={() => clickHandler(1, '+')}>
-                                    <HiPlus color='black' />
-                                </button>
-                            </div>
-                            <p className='mint_price'>
-                                {(price * quantity).toFixed(2)} ETH
-                            </p>
-                            <p className="text-center inst_para text-white ">
-                                You can mint up to 2 SilverBack Legends per transaction. <br />
-                            </p>
-                            <button
-                                onClick={() => setClose(true)}
-                                className="connect_btn" >
-                                Mint
-                            </button>
-
+                        <div className="message_box">
+                            <p className='alert-p'>Minting Is Opened <br /> For Whitelisted Addresses. </p>
                         </div>
+                        {
+                            close ? <div className='notification_box'>
+                                <p><span className='type'>Error! </span> Email address is already registered.</p>
+                                <span onClick={() => setClose(false)} className='cut'><GrFormClose /></span>
+                            </div> : null
+                        }
+
+                        <div className="sellector_buttons_wrapper">
+                            <button className='plus_minus_button' onClick={() => clickHandler(1, '-')}>
+                                <HiMinus color='black' />
+                            </button>
+                            <div >
+                                <span className='quantity'> QUANTITY</span>
+                                <span className='mint_qantity'>{quantity}</span>
+
+                            </div>
+
+                            <button className='plus_minus_button' onClick={() => clickHandler(1, '+')}>
+                                <HiPlus color='black' />
+                            </button>
+                        </div>
+                        <p className='mint_price'>
+                            {(price * quantity).toFixed(2)} ETH
+                        </p>
+                        <p className="text-center inst_para text-white ">
+                            You can mint up to 2 SilverBack Legends per transaction. <br />
+                        </p>
+                        <button
+                            onClick={() => setClose(true)}
+                            className="connect_btn" >
+                            Mint
+                        </button>
+
+                    </div>
                     {/* <button className='theme-btn mint_raffle_button'>Join The Raffle</button> */}
 
                 </div>

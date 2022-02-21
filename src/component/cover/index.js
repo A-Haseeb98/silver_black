@@ -92,9 +92,8 @@ function Cover() {
                     {/* <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN US TO REGISTER FOR PRESALE</button> */}
                     <div className='center_div'>
                         <Fade direction='right' triggerOnce={true} cascade={true}>
-
-                            <h1>Welcome To The Exclusive SILVERBACK LEGENDS!  </h1>
-                            <p>Join this super-exclusive NFT project featuring not only the coolest art, but unmatched utility!</p>
+                            <h1> SILVERBACK LEGENDS </h1>
+                            <p> The Godfathers of all Apes</p>
                         </Fade>
 
                         <button onClick={() => { window.location = 'https://discord.com/invite/VwKsk7ktsp' }} className='button_banner '>JOIN DISCORD</button>

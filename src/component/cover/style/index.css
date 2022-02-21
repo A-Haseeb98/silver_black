@@ -319,7 +319,7 @@
     line-height: 28px;
     font-weight: bolder;
 }
-.center_div span{
+.center_div p{
     font-size: 18px;
     font-weight: bold;
     display: inline-block;
@@ -464,18 +464,21 @@
 .center_div h1{
     margin-top: 10px;
     color: white;
-    font-size: 28px !important;
+    font-size: 29px !important;
     text-align: center;
-    line-height: 35px !important;
+    line-height: 32px !important;
     font-weight: bolder;
+    margin-bottom: 5px;
 }
 .center_div p{
-    font-size: 16px;
-    line-height:22px;
+    font-size: 21px !important;
+    line-height:20px;
     width: 100%;
     font-weight: bold;
     display: inline-block;
 }
+
+
 
 .button_banner{
     font-weight: 700;
